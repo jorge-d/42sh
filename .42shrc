@@ -1,0 +1,34 @@
+##############################################################################
+#   __  __                 __                           ____    __           #
+#  /\ \/\ \               /\ \__                 __    /\  _`\ /\ \          #
+#  \ \ \ \ \     __    ___\ \ ,_\  __  __  _ __ /\_\   \ \,\L\_\ \ \___      #
+#   \ \ \ \ \  /'__`\/' _ `\ \ \/ /\ \/\ \/\`'__\/\ \   \/_\__ \\ \  _ `\    #
+#    \ \ \_/ \/\  __//\ \/\ \ \ \_\ \ \_\ \ \ \/ \ \ \    /\ \L\ \ \ \ \ \   #
+#     \ `\___/\ \____\ \_\ \_\ \__\\ \____/\ \_\  \ \_\   \ `\____\ \_\ \_\  #
+#      `\/__/  \/____/\/_/\/_/\/__/ \/___/  \/_/   \/_/    \/_____/\/_/\/_/  #
+#                                                                            #
+#                      Configuration file - for VSH			     #
+#									     #
+##############################################################################
+
+##-> alias <-##
+alias ll="ls -lG"
+alias ls="ls -G"
+alias la="ls -aG"
+alias j="jobs"
+alias emacs="emacs -nw"
+alias ne="emacs"
+alias z="zlock"
+alias sshepitech="ssh vvvv@ssh.epitech.eu"
+
+## history ##
+set HISTFILE ./.42shistory
+set HISTSIZE 30
+set CONF_FILE ./.42shrc
+set HIST_DOUBLOON 1
+set HREACT_DISP 0
+set HREACT_OPT 1
+
+## custom hreact bar ##
+hreact x 80
+hreact y 70

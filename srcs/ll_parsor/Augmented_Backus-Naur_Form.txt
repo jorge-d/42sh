@@ -1,0 +1,36 @@
+##
+## Augmented_Backus-Naur_Form.txt for parserll in /u/epitech_2014/sabbag_a/svn/parserll/trunk
+##
+## Made by fares sabbagh
+## Login   <sabbag_a@epitech.net>
+##
+## Started on  Thu May 27 02:40:44 2010 fares sabbagh
+## Last update Thu May 27 17:10:55 2010 joni shkurti
+##
+
+OPE_AND		  = &&
+OPE_OR		  = ||
+OPE_PIPE	  = |
+OPE_LEFT	  = [< / <<]
+OPE_RIGHT	  = [> / >>]
+OPE_SEMI	  = ;
+OPE_REDIR	  = [OPE_LEFT / OPE_RIGHT]
+OPE_ALL		  = [OPE_AND / OPE_OR / OPE_PIPE / OPE_REDIR]
+WORD		  = !OPE_ALL
+
+S		  = exp
+exp		  = or_exp
+or_exp		  = and_exp [OPE_OR or_exp]?
+and_exp		  = pipe_exp [OPE_AND and_exp]?
+pipe_exp	  = redir_exp [OPE_PIPE pipe_exp]?
+redir_exp	  = redir_left_norm / redir_left_spe
+redir_left_norm	  = redir_right [OPE_LEFT redir_exp]?
+redir_left_spe	  = OPE_LEFT file redir_exp
+redir_right	  = redir_right_norm / redir_right_spe
+redir_right_norm  = command [OPE_RIGHT file]?
+redir_right_spe	  = OPE_RIGHT file command
+command		  = cmd args*
+cmd		  = WORD
+args		  = WORD
+file		  = WORD
+

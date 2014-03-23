@@ -1,0 +1,9 @@
+
+// pour le globbing de l'environnement
+char		**operate_env_globbing(char **cmd, t_env *st_env);
+
+// pour le remplacement des alias
+char		**expend_alias(char **cmd, t_alias *st_alias);
+
+// pour le globbing fichier
+char		**operate_globbing(char **cmd);
