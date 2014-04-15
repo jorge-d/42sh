@@ -1,9 +1,9 @@
 /*
 ** my_readline.c for Readline Recode by lifely in /u/all/di-mar_j/cu/svn/VSHsvn/branches/my_readline-new
-** 
+**
 ** Made by julien di-marco
 ** Login   <di-mar_j@epitech.net>
-** 
+**
 ** Started on  Mon Apr 19 12:46:50 2010 julien di-marco
 ** Last update Thu May 27 17:29:37 2010 dimitri jorge
 */
@@ -45,7 +45,7 @@ char		*my_readline(t_shell *shell, char *prompt)
       hreact_displaying(shell);
 #endif
       print_prompt(base, prompt);
-      output = getline(base, shell);
+      output = vsh_getline(base, shell);
       save_to_history(shell, output);
     }
   reset_readline(base);

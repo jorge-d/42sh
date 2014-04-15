@@ -1,9 +1,9 @@
 /*
 ** 42sh.h for Heade in /Users/lifely/Developer/project/42shsvn/trunk
-** 
+**
 ** Made by julien di-marco
 ** Login   <di-mar_j@epitech.net>
-** 
+**
 ** Started on  Mon May 17 00:58:27 2010 julien di-marco
 ** Last update Sun May 23 05:51:30 2010 julien di-marco
 */
@@ -251,7 +251,7 @@ int		read_file(t_shell *stShell);
 
 char		*my_readline(t_shell *shell, char *prompt);
 
-char		*getline(t_rl *, t_shell *);
+char		*vsh_getline(t_rl *, t_shell *);
 
 int		self_insert_command(t_shell *, t_rl *, char *);
 int		overwrite_mode(t_shell *, t_rl *, char *);

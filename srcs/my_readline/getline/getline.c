@@ -103,7 +103,7 @@ static int	print_buf(char *read, t_rl *base, t_shell *shell)
 ** but i repeat, this is magical .
 */
 
-char		*getline(t_rl *base, t_shell *shell)
+char		*vsh_getline(t_rl *base, t_shell *shell)
 {
   char		readc[READSIZE + 1];
   t_bind	*bind;

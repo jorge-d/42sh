@@ -44,7 +44,7 @@ int		hist_limit(t_hist **hist)
 	  while (*hist && (*hist)->next)
 	    *hist = (*hist)->next;
 	}
-      else if ((i == 0))
+      else if (i == 0)
 	return (-1);
     }
   return (0);

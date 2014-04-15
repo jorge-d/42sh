@@ -224,7 +224,7 @@ CFLAGS		+= -I$(INCLUDE) -D_${OS}_ $(FLAGS)
 LDFLAGS		= -ltermcap -L$(LIBRARY) -l_neolib_$(ARCHI)-$(OS)
 
 FLAGS		+= -W -Wall -Wextra -O3 -ansi -pedantic \
-		  -funroll-loops -pipe -s
+		  -funroll-loops -pipe
 
 ##Debug Flags - Uncoment & comment up definition
 #FLAGS		=  -W -Wall -ansi -pedantic -g3

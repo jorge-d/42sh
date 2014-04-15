@@ -1,15 +1,15 @@
 /*
 ** lib.h for 42sh in /u/all/jorge_d/cu/svn/42shsvn/trunk
-** 
+**
 ** Made by dimitri jorge
 ** Login   <jorge_d@epitech.net>
-** 
+**
 ** Started on  Wed Apr 21 16:48:35 2010 dimitri jorge
 ** Last update Sat May 22 13:16:14 2010 dimitri jorge
 */
 
-#ifndef		LIB_H__
-# define	_LIB_H__
+#ifndef		__LIB_H__
+# define	__LIB_H__
 
 #include	<sys/types.h>
 #include	<dirent.h>
